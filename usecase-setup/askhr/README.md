@@ -24,12 +24,6 @@ Reserve the techzone instance that includes **watsonx.ai**, **watsonx Orchestrat
 For details, go [here](../../environment-setup/readme.md). For instructor setup make sure to reserve a single environment.
 
 ### 2. Deploy application
-#### Automated deployment - preferred
-
-The automation script is the preferred method for deploying the backend application. This will create an `hr-skills-app` deployment. If you face issues with the script or are deploying in a different environment, see steps to deploy manually below.
-
-For automated deployment instructions, go [here](DEPLOY_AUTO.md). Take note of the deployment URL produced upon completion of the script. You will need it in the next step (step 3).
-
 #### Manual deployment
 
 For manual steps to deploy the backend application go [here](DEPLOY_MANUAL.md). Take note of the deployment URL.
