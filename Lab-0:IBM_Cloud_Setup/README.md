@@ -9,7 +9,7 @@ If you've not created your IBM cloud account, please refer the link and create y
 
 ## Step-2: Go to our email ID and join the IBM cloud account. 
 
-<img width="1000" alt="Banner" src="/images/img001.png"> 
+![Banner](images/img001.png)
 
 ## Step-3: After login, this is how your IBM cloud account will look like. 
 
