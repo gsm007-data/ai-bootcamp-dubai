@@ -19,14 +19,14 @@ The Gitrpo contains the below -
     - Deployment Space ID 
 ## Lab-1: Pick a use case  - (No code)
 Select an enterprise use case, learn about the business story, and implement it using the hands-on step-by-step guides:
-    - [Intelligent assistant for Warehouse management](./usecases/intelligent-assistant) - (Demo)
-        - Watsonx.Orchestrate + Watsonx.ai
-    - [Business automation for Competitive Analysis](./usecases/business-automation) - (Hands-on)
-        - Watsonx.Orchestrate + Watsonx.ai
-    - [Financial Research Analyst](./usecases/banking-financial-research-analyst) - (Hands-on)
-        - Watsonx.Orchestrate + Knowledge Base
-    - [HR automation](./usecases/ask-hr) (Optional)
-        -  Watsonx.Orchestrate + Knowledge Base + Custom deployment
+- [Intelligent assistant for Warehouse management](./usecases/intelligent-assistant) - (Demo)
+    - Watsonx.Orchestrate + Watsonx.ai
+- [Business automation for Competitive Analysis](./usecases/business-automation) - (Hands-on)
+    - Watsonx.Orchestrate + Watsonx.ai
+- [Financial Research Analyst](./usecases/banking-financial-research-analyst) - (Hands-on)
+    - Watsonx.Orchestrate + Knowledge Base
+- [HR automation](./usecases/ask-hr) (Optional)
+    -  Watsonx.Orchestrate + Knowledge Base + Custom deployment
 ## Lab-2: MCP
 ## Lab-3: Custom Agent Integration 
     - Integrate CrewAI agent in Watsonx.Orchestrate (Low code)
