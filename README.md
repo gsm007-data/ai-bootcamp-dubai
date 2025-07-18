@@ -13,7 +13,7 @@ In this bootcamp, you will build and deploy an Agentic AI application prototype 
 The Git repo contains the below - 
 
 ## Demo
-- [Intelligent assistant for Warehouse management](./Lab-1: Usecases/intelligent-assistant)
+- [Intelligent assistant for Warehouse management](./Lab-1:Usecases/intelligent-assistant)
     - watsonx Orchestrate + watsonx.ai
 
 
@@ -26,13 +26,13 @@ The Git repo contains the below -
 ## Lab-1: Business automation for Competitive Analysis
 Learn about the business story, and implement it using the hands-on step-by-step guides:
 
-- [Business automation for Competitive Analysis](./Lab-1: Usecases/business-automation)
+- [Business automation for Competitive Analysis](./Lab-1:Usecases/business-automation)
     - Watsonx.Orchestrate + Watsonx.ai
  
 ## Lab-2: Financial Research Analyst
 Learn about the business story, and implement it using the hands-on step-by-step guides:
 
-- [Financial Research Analyst](./Lab-1: Usecases/banking-financial-research-analyst)
+- [Financial Research Analyst](./Lab-1:Usecases/banking-financial-research-analyst)
     - Watsonx.Orchestrate + Knowledge Base
 
 
@@ -42,7 +42,7 @@ You have access to the demo environment until 28-July-2025, you can feel free to
 
 ### HR Automation
 
-- [HR automation](./Lab-1: Usecases/ask-hr) (Optional)
+- [HR automation](./Lab-1:Usecases/ask-hr) (Optional)
     -  Watsonx.Orchestrate + Knowledge Base + Custom deployment
  
 ### MCP
