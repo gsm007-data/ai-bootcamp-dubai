@@ -6,7 +6,7 @@ In this bootcamp, you will build and deploy an Agentic AI application prototype 
 
 🚀 You'll learn the concepts behind Agentic AI workflows.
 
-🚀 You'll leverage IBM watsonx and open source tools for low-code fast prototyping of Agentic AI workflows.
+🚀 You'll leverage IBM watsonx Orchestrate and open source tools for low-code fast prototyping of Agentic AI workflows.
 
 🚀 You'll learn how to deploy an Agentic AI application and the trust considerations needed to go to production.
 
