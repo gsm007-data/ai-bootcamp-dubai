@@ -17,5 +17,5 @@ This makes MCP a foundational layer for **agentic AI systems**, ensuring consist
 
 Pre-requisite: Install ADK (Refer - [Lab-3:Agent_Development_Kit](dubai bootcamp/ai-bootcamp-dubai/Lab-4:Agent_Development_Kit))
 
-[Follow the link to setup MCP](/toolkits_MCP.mp4)
+[Follow the link to setup MCP](./toolkits_MCP.mp4)
 
