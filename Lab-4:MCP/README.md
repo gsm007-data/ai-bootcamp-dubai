@@ -15,3 +15,7 @@ This makes MCP a foundational layer for **agentic AI systems**, ensuring consist
 
 ### Follow the below steps to create a sample MCP tool and import it in Watsonx Orchestrate ADK. 
 
+Pre-requisite: Install ADK (Refer - [Lab-3:Agent_Development_Kit](dubai bootcamp/ai-bootcamp-dubai/Lab-4:Agent_Development_Kit))
+
+[Follow the link to setup MCP](/toolkits_MCP.mp4)
+

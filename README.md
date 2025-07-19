@@ -16,42 +16,36 @@ The Git repo contains the below -
 - [Intelligent assistant for Warehouse management](./Lab-1:Usecases/intelligent-assistant)
     - watsonx Orchestrate + watsonx.ai
 
-
-## Lab-0: IBM Cloud Setup - 
+## Lab-0: IBM Cloud Setup - [Link](Lab-0:IBM_Cloud_Setup)
 - Setup the necessary credentails to be used in the Lab such as 
     - IBM Cloud API key
     - Project ID 
     - Deployment Space ID 
 
-## Lab-1: Business automation for Competitive Analysis
-Learn about the business story, and implement it using the hands-on step-by-step guides:
-
+## Lab-1: Business automation for Competitive Analysis -
 - [Business automation for Competitive Analysis](./Lab-1:Usecases/business-automation)
     - Watsonx.Orchestrate + Watsonx.ai
  
 ## Lab-2: Financial Research Analyst
-Learn about the business story, and implement it using the hands-on step-by-step guides:
-
 - [Financial Research Analyst](./Lab-1:Usecases/banking-financial-research-analyst)
     - Watsonx.Orchestrate + Knowledge Base
 
-
 ## Optional Hands-on Labs
-
-You have access to the demo environment until 28-July-2025, you can feel free to perform this labs on your own:
 
 ### HR Automation
 
 - [HR automation](./Lab-1:Usecases/ask-hr) (Optional)
     -  Watsonx.Orchestrate + Knowledge Base + Custom deployment
- 
-### MCP
--  MCP
 
-### Agent Development Kit
-  
- 
-### Custom Agent Integration
-
+### Lab-2: Custom Agent integration (CrewAI) - [Link](./Lab-2: Custom_Agent_Integration)
     - Integrate CrewAI agent in Watsonx.Orchestrate (Low code)
+
+### Lab-3: Agent Development Kit [Link](./Lab-3:Agent_Development_Kit)
+
+### Lab-4: MCP - [Link](./Lab-4:MCP)
+
+##### Note - You have access to the demo environment until 28-July-2025, you can feel free to perform this labs on your own:  
+
+
+    
 
