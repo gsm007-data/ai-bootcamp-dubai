@@ -16,7 +16,7 @@ The Git repo contains the below -
 - [Intelligent assistant for Warehouse management](./Lab-1:Usecases/intelligent-assistant)
     - watsonx Orchestrate + watsonx.ai
 
-## Lab-0: IBM Cloud Setup - [Link](Lab-0:IBM_Cloud_Setup)
+## Lab-0: IBM Cloud Setup - [Link](./Lab-0:IBM_Cloud_Setup)
 - Setup the necessary credentails to be used in the Lab such as 
     - IBM Cloud API key
     - Project ID 

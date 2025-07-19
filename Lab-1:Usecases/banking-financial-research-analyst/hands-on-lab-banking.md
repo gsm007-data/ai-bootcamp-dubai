@@ -127,6 +127,7 @@ Drag and drop the following pdf files to upload to the knowledge for the agent :
    - [META-Q4-2024-Earnings.pdf](documents/META-Q4-2024-Earnings.pdf)
    - [NFLX-Q4-2024-Earnings.pdf](documents/NFLX-Q4-2024-Earnings.pdf)
    - [NVDA-Q4-2024-Earnings.pdf](documents/NVDA-Q4-2024-Earnings.pdf)
+   - [Toyota_2023_4q_summary_en.pdf](documents/Toyota_2023_4q_summary_en.pdf)
 
 ![wxo knowledge upload files](images/wxo-knowledge-upload-files.png) 
 
@@ -217,7 +218,7 @@ You are a Financial Analyst Agent that provides comprehensive financial research
 - Access detailed financial statements (income statement, balance sheet, cash flow statement) with both annual and quarterly data
 
 **Research & Information:**
-- Search the web for current financial news, analyst reports, and market insights using DuckDuckGo Search
+- Search the web for current financial news, analyst reports, and market insights using Brave Search
 - Find definitions of financial terms and company background information using Wikipedia search
 - Provide contextual analysis by combining multiple data sources
 
@@ -302,7 +303,7 @@ Again, observe the response and expand the **Show Reasoning** link to trace thro
 ## Web Search Agent Creation and Configuration
 In this section, you will develop the **Web Search Agent**, another collaborator agents which is specifically skilled at searching the web and returning publicly available details about an entity as well as any recent news and analyst reports. 
 
-The architecture references multiple web search tools, namely, the **Brave Search Tool** and the **DuckDuckGo Search Tool**. Since these web search tools utilize different underlying technologies, leveraging both web search tools can return more relevant information and then the Web Search Agent would handle aggregating the final response. In this hands-on lab, you will add the **DuckDuckGo Search Tool** and complete the hands-on lab using just that search tool. 
+The architecture references multiple web search tools, namely, the **Brave Search Tool** and the **DuckDuckGo Search Tool**. Since these web search tools utilize different underlying technologies, leveraging both web search tools can return more relevant information and then the Web Search Agent would handle aggregating the final response. In this hands-on lab, you will add the **Brave Search Tool** and complete the hands-on lab using just that search tool. 
 
 *Optional* You can check with your instructor if they setup the **Brave Search Tool** as well and then you are welcome to try adding that tool as well. If you do add the **Brave Search Tool**, you need to update the instructions for the agent to retrieve search results from multiple tools and aggregate the results.
 
@@ -338,9 +339,9 @@ This agent can search the web to retrieve information related to user query.
 
 ![wxo web search agent tool import openapi](images/wxo-web-search-agent-tool-import-openapi.png) 
 
-30- Next, select the checkboxes for the **Get DuckDuckGo Search Results** operation (annotated with red arrow) and click **Done**.
+30- Next, select the checkboxes for the **Get Brave Search Results** operation (annotated with red arrow) and click **Done**.
 
-![wxo web search agent tool import operations](images/websearch-duckduckgo.png) 
+![wxo web search agent tool import operations](images/brave-search.png) 
 
 31- At this point, you will see the tool imported under the Tools subsection which means it is available for the **Web Search Agent** to use this tools in executing tasks that require searching the web and retrieving data related to the user query. 
 
@@ -349,12 +350,12 @@ This agent can search the web to retrieve information related to user query.
 
 Instructions: 
 ```
-For information about latest or recent news, use the DuckDuckGo search tool. Also, for general inquiries where the information is available on-line can be retrieved using a web search, use the DuckDuckGo search tool.
+For information about latest or recent news, use the Brave search tool. Also, for general inquiries where the information is available on-line can be retrieved using a web search, use the Brave search tool.
 ```
 
-Next, test the functionality of the agent by asking a question such as ```Can you show top executives at Amazon?``` and observe the response of the agent. Click the **Show Reasoning** link (annotated with red arrow) and note how the agent is correctly invoking the **DuckDuckGo Search Tool** to retrieve relevant information.
+Next, test the functionality of the agent by asking a question such as ```Can you show top executives at Amazon?``` and observe the response of the agent. Click the **Show Reasoning** link (annotated with red arrow) and note how the agent is correctly invoking the **Brave Search Tool** to retrieve relevant information.
 
-![wxo web search agent behavior](images/wxo-web-search-agent-behavior-duckduckgo.png) 
+![wxo web search agent behavior](images/brave-search-agent.png) 
 
 33- Now that you have configured and tested the **Web Search Agent**, you can deploy it to make it accessible as a collaborator agent. To do so, switch the slide bar to the off position (annotated with red arrow) to disable making the **Web Search Agent** accessible on the chat interface. This agent is only a supporting agent to the **Financial Analyst Agent** only and as such, should be disabled from appearing on the chat interface.
 
@@ -403,7 +404,7 @@ You are a Financial Analyst Agent that provides comprehensive financial research
 - Access detailed financial statements (income statement, balance sheet, cash flow statement) with both annual and quarterly data
 
 **Research & Information:**
-- Search the web for current financial news, analyst reports, and market insights using DuckDuckGo Search
+- Search the web for current financial news, analyst reports, and market insights using Brave Search
 - Find definitions of financial terms and company background information using Wikipedia search
 - Provide contextual analysis by combining multiple data sources
 

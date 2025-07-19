@@ -86,7 +86,7 @@ If you've not created your IBM cloud account, please refer the link and create y
 
 ![Banner](images/img016.png)
 
-11. Click on "Manage" > "Servics and integrations" > "Associate service". (This step is to associate machine learning services to the project)
+11. Click on "Manage" > "Services and integrations" > "Associate service". (This step is to associate machine learning services to the project)
 
 ![Banner](images/img017.png)
 
@@ -117,7 +117,7 @@ If you've not created your IBM cloud account, please refer the link and create y
 
 ![Banner](images/img023.png)
 
-4. Now you mention a name to your deployment space. 
+4. Now you mention a name to your deployment space. And "Deployment stage" should be "Development". 
 
 ![Banner](images/img024.png)
 
@@ -133,7 +133,7 @@ If you've not created your IBM cloud account, please refer the link and create y
 
 ![Banner](images/img027.png)
 
-8. Click on "Manage" > "General" and then copy "SPace GUID". **Copy it and save it in your note". 
+8. Click on "Manage" > "General" and then copy "Space GUID". **Copy it and save it in your note". 
 
 ![Banner](images/img028.png)
 
