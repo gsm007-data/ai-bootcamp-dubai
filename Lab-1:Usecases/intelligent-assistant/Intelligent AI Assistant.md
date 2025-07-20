@@ -67,12 +67,14 @@ Go ahead and chat with watsonx Orchestrate to explore what type of answers it gi
 ### AI Agent Configuration
 We are now ready to build the first agent. In the watsonx Orchestrate console, click on either `Create or Deploy` or `Create new agent` (either will goet you to he same place).
 
+IMPORTANT: You are using a shared environment. While creating the AI agents make sure to add your name as prefix to the agent name i.e. 
+
 ![alt text](images/image4.png)
 
 ### The Dock Status Agent
 In the following screen, you can select if you want to create the new agent from scratch or from a template, and give it a name and a description.
 To create the solution, you will need to create a number of agents and we will go through them one by one, starting with the `Dock Status` agent. Let's start by giving it a name  and a description:
-- Name: Dock Status Agent
+- Name: Your Name - Dock Status Agent
 - Description: 
 ```
 The Dock Status Agent specializes in answering inquiries about current warehouse dock status. It has access to detailed and up-to-date data about which trucks are loading and unloading at docks, and information about the products they carry, and return detailed textual information about this data to the user.
