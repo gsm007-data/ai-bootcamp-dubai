@@ -90,7 +90,7 @@ If you've not created your IBM cloud account, please refer the link and create y
 
 ![Banner](images/img017.png)
 
-12. Check mark on the "watsonx.ai Runtime" service. 
+12. Check mark on the "watsonx.ai Runtime" service. If you don't see the service, add all the regions in the filter.
 
 ![Banner](images/img018.png)
 
