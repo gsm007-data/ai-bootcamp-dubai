@@ -10,8 +10,6 @@ In this bootcamp, you will build and deploy an Agentic AI application prototype 
 
 🚀 You'll learn how to deploy an Agentic AI application and the trust considerations needed to go to production.
 
-The Git repo contains the below - 
-
 ## Demo
 - [Intelligent assistant for Warehouse management](./Lab-1:Usecases/intelligent-assistant)
     - watsonx Orchestrate + watsonx.ai
@@ -32,6 +30,8 @@ The Git repo contains the below -
 
 ## Optional Hands-on Labs
 
+Note - You have access to the demo environment until 28-July-2025, you can feel free to perform this labs on your own.
+
 ### HR Automation
 
 - [HR automation](./Lab-1:Usecases/ask-hr) (Optional)
@@ -43,9 +43,6 @@ The Git repo contains the below -
 ### Lab-3: Agent Development Kit [Link](./Lab-3:Agent_Development_Kit)
 
 ### Lab-4: MCP - [Link](./Lab-4:MCP)
-
-##### Note - You have access to the demo environment until 28-July-2025, you can feel free to perform this labs on your own:  
-
 
     
 
