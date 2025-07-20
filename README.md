@@ -30,15 +30,15 @@ In this bootcamp, you will build and deploy an Agentic AI application prototype 
 
 ## Optional Hands-on Labs
 
-Note - You have access to the demo environment until **28-July-2025**, you can feel free to perform this labs on your own.
+Note - You have access to the IBM watsonx environment until **28-July-2025**, you can feel free to perform this labs on your own.
 
 ### HR Automation
 
 - [HR automation](./Lab-1:Usecases/ask-hr) (Optional)
-    -  Watsonx.Orchestrate + Knowledge Base + Custom deployment
+    -  watsonx Orchestrate + Knowledge Base + Custom deployment
 
 ### Lab-2: Custom Agent integration (CrewAI) - [Link](./Lab-2:Custom_Agent_Integration)
-    - Integrate CrewAI agent in Watsonx.Orchestrate (Low code)
+    - Integrate CrewAI agent in watsonx Orchestrate (Low code)
 
 ### Lab-3: Agent Development Kit [Link](./Lab-3:Agent_Development_Kit)
 
