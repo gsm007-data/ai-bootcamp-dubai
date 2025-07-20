@@ -52,4 +52,4 @@ To recap, you will learn in this bootcamp how to utilize the capabilities of wat
 ## 📝 Step-by-step Hands-on Lab
 You can find step-by-step instructions here :
 
-[Step-by-step hands-on guide](https://github.com/gsm007-data/ai-bootcamp-turkey/blob/tr_gsm/usecases/banking-financial-research-analyst/hands-on-lab-banking.md)
+[Step-by-step hands-on guide](./hands-on-lab-banking.md)
