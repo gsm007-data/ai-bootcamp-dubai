@@ -508,7 +508,7 @@ Expand the **Show Reasoning** section and observe that the agent took 3 steps (a
 ![wxo chat q3](images/wxo-chat-q3.png)
 
 48- Now, let's try to explore what are the steps taken.
-Expand the **Step1**, **Step 2**, and **Step 3** sections and observe the agent transferring the request to the **Financial API Agent** to provide a definition to the financial term 'Diluted earnings per share'.
+Expand the **Step1**, **Step 2**, **Step 3**, and **Step 4** sections and observe the agent transferring the request to the **Financial API Agent** to provide a definition to the financial term 'Diluted earnings per share'.
 
 ![wxo chat q3 reasoning 1](images/wxo-chat-q3-reasoning-1.png)
 
