@@ -36,7 +36,7 @@ The sales department of ABC Motor Corp, an automotive large player, when prepari
 
 We will create one agent **Comparison Agent** in watsonx.ai's Agent Lab as part of this setup:  
 
-From the Home page of Agent Lab, click on the Build an AI agent to automate tasks
+From the Home page of watsonx, click on the Build an AI agent to automate tasks
 
 ![Home page](assets/agent_lab_home.png) 
 
@@ -44,8 +44,8 @@ Let's start the **Comparison Agent**.
 
 ### Comparison Agent  
 #### Setup  
-1. Enter a **name** for the agent as shown in the image.
-2. Add a **description** (optional).
+1. Enter a **name** for the agent as shown in the image i.e. `Your Name - Comparison Agent`.
+2. Add a **description**.
 ```
 The agent compares the given data with additional information gathered from Google search results.
 ```
@@ -137,7 +137,7 @@ In Orchestrate, we will create our main agent, as outlined below:
 2. Click on the Create Agent button.
 ![Create Agent](assets/create_wxo.png)
 
-3. Select Create from scratch (as shown in image 1 below), enter your agent’s name (as shown in image 2), provide a description (as shown in image 3), and then click the Create button (as shown in image 4).
+3. Select Create from scratch (as shown in image 1 below), enter your agent’s name `YOUR NAME - Product Agent`, provide a description (as shown in image 3), and then click the Create button (as shown in image 4).
 
    For Product Agent use the below description
         
@@ -146,7 +146,7 @@ In Orchestrate, we will create our main agent, as outlined below:
    ```
    ![Create from scratch](assets/product_scratch.png)
 
-4. After the agent is created, navigate to the Agent Configuration page.
+4. After the agent is created, navigate to the Knowledge Section.
 
    **Description:**
    ```
@@ -170,9 +170,9 @@ In Orchestrate, we will create our main agent, as outlined below:
 
 9. On the next page, enter the following information:
       1. Provide: From the drop down select watsonx.ai.
-      2. API key: Enter the watsonx.ai API key.
+      2. API key: Enter your watsonx.ai API key.
       3. Service instance URL: Enter the public endpoint URL of the agent that we copied in step 6.
-      4. Display name: Enter the name of the agent.
+      4. Display name: Enter the name of the agent with prefix your name. 
       5. Description: Enter the below description.
       6. Click on the Import Agent button.
 
@@ -206,10 +206,10 @@ Follow the steps above, then try interacting with the use case using these sampl
 
    Ask the following questions to get responses from the Product Agent:
    ```
-   Q1: What are the products of ABC Motors.
+   What are the products of ABC Motors.
    ```
    ```
-   Q2: Give me the info of Zenith X3.
+   Give me the info of Zenith X3.
    ```
    ![Product Agent Response](assets/chat_1.png)  
 
@@ -222,4 +222,4 @@ Follow the steps above, then try interacting with the use case using these sampl
    ![Comparison Agent Response](assets/chat_2.png)  
    ![Comparison Agent Response 2](assets/chat_3.png)
 
-Now, explore and experience the power of Skills & Agents in action! 🚀 
+Now, explore and experience the power of Agents & Tools in action! 🚀 
