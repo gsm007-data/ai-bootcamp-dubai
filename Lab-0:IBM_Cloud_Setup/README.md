@@ -18,7 +18,7 @@ If you've not created your IBM cloud account, please refer the link and create y
 
 [Create IBMid account](https://www.ibm.com/docs/en/ibmid?topic=introduction)
 
-## Step-2: Go to our email ID and join the IBM cloud account. 
+## Step-2: Go to your email ID and join the IBM cloud account. 
 
 ![Banner](images/img001.png)
 
