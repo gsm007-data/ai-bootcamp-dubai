@@ -173,7 +173,7 @@ Finally, make sure you uncheck the `Show agent` checkbox, as shown in the pictur
 
 ![alt text](images/image6.png)
 
-Let's now test the new agent. In the Preview window, enter a question for the agent, for example "Can you tell me about the status of the warehouse docks?" Note how the agent is using the provided data to formulate its answer.
+Let's now test the new agent. In the Preview window, enter a question for the agent, for example "Can you tell me about the status of the warehouse docks?" Note how the agent is using the provided data to formulate its answer. Also, experiment asking the agent to format the output as table.
 
 ![alt text](images/image7.png)
 
