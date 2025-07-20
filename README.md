@@ -37,7 +37,7 @@ Note - You have access to the demo environment until **28-July-2025**, you can f
 - [HR automation](./Lab-1:Usecases/ask-hr) (Optional)
     -  Watsonx.Orchestrate + Knowledge Base + Custom deployment
 
-### Lab-2: Custom Agent integration (CrewAI) - [Link](./Lab-2: Custom_Agent_Integration)
+### Lab-2: Custom Agent integration (CrewAI) - [Link](./Lab-2:Custom_Agent_Integration)
     - Integrate CrewAI agent in Watsonx.Orchestrate (Low code)
 
 ### Lab-3: Agent Development Kit [Link](./Lab-3:Agent_Development_Kit)

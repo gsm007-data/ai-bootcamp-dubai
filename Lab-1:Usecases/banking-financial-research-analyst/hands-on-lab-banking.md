@@ -192,7 +192,7 @@ For purposes of the Financial API Agent, you will use the **Import** option to i
 
 ![wxo tool import openapi](images/wxo-tool-import-openapi.png) 
 
-18- Next, select the checkboxes for the **Get Stock Price Data**, **Get Stock Information**, **Get Financial Statements**, **Get Earnings Report**, and **Search Wikipedia** operations (annotated with red arrows) and click **Done**.
+18- Next, select the checkboxes for the **Get Stock Price Data**, **Get Stock Information**, **Get Financial Statements**, **Get Earnings Report** operations (annotated with red arrows) and click **Done**.
 
 ![wxo tool import operations](images/wxo-tool-import-operations.png) 
 
@@ -211,7 +211,7 @@ You are a Financial Analyst Agent that provides comprehensive financial research
 
 **Research & Information:**
 - Search the web for current financial news, analyst reports, and market insights using Brave Search
-- Find definitions of financial terms and company background information using Wikipedia search
+- Find definitions of financial terms and company background information using Brave Search
 - Provide contextual analysis by combining multiple data sources
 
 **TOOL SELECTION GUIDE:**
@@ -237,16 +237,10 @@ You are a Financial Analyst Agent that provides comprehensive financial research
 - Debt analysis, revenue growth, profitability metrics
 - Multi-year financial performance
 
-**SEARCH WIKIPEDIA tool** - Use for:
-- Financial term definitions and explanations
-- Educational content about financial concepts
-- Company background and historical information
-
 **Response Guidelines:**
 - For current metrics and ratios, use GET STOCK INFORMATION tool
 - For historical performance analysis, use GET STOCK PRICE DATA tool
 - For quarterly/annual financials, use GET FINANCIAL STATEMENTS tool
-- For definitions and education, use SEARCH WIKIPEDIA tool
 - Always provide data-driven insights with specific metrics when available
 - Cite your sources and indicate when data is real-time vs historical
 
@@ -256,18 +250,14 @@ You are a Financial Analyst Agent that provides comprehensive financial research
 - "Show me Apple's Q1 2024 results" → Use GET FINANCIAL STATEMENTS tool (with year: 2024, quarter: "Q1")
 - "Compare Apple and Tesla market caps" → Use GET STOCK INFORMATION tool for both companies
 - "Apple's 3-year revenue growth trend" → Use GET FINANCIAL STATEMENTS tool (with years_back: 3)
-- "What is EBITDA margin?" → Use SEARCH WIKIPEDIA tool
 - "Tesla's debt-to-equity ratio over last 3 years" → Use GET FINANCIAL STATEMENTS tool (statement_type: "balance", years_back: 3)
 
 **Multi-Tool Examples:**
 - "Analyze Apple's performance and valuation" → GET STOCK INFORMATION + GET STOCK PRICE DATA
 - "Compare Q1 results of Apple and Google with P/E ratios" → GET FINANCIAL STATEMENTS + GET STOCK INFORMATION for both
-- "Explain EBITDA and show Microsoft's EBITDA trend" → SEARCH WIKIPEDIA + GET FINANCIAL STATEMENTS
 ```
 
 Also, switch the slide bar to the off position (annotated with red arrow) to disable making the **Financial API Agent** accessible on the chat interface. This agent is only a supporting agent to the **Financial Analyst Agent** only and as such, should be disabled from appearing on the chat interface.
-
-![wxo financial agent behavior](images/wxo-financial-api-agent-behavior.png)
 
 21- Now that you have completed the creation of the agent and added the tools it requires, test the tools in the Preview section by asking a sample question such as:
 
@@ -279,14 +269,7 @@ Observe the response which was based on the information returned by the Market D
 
 ![wxo tool earnings](images/wxo-financial-api-agent-tool-earnings.png) 
 
-22- Test the **Financial API Agent** further by asking another question:
-```What does EBITDA mean?```
-
-Again, observe the response and expand the **Show Reasoning** link to trace through the agent's reasoning which in this case correctly triggered the **Search_Wikipedia** tool (annotated with red oval).
-
-![wxo tool glossary](images/wxo-financial-api-agent-tool-glossary.png) 
-
-23- At this point, click the **Deploy** button to deploy the agent and makes it available to be used as a collaborator agent.
+22- At this point, click the **Deploy** button to deploy the agent and makes it available to be used as a collaborator agent.
 
 ![wxo financial agent deploy](images/wxo-financial-api-agent-deploy.png) 
 
@@ -295,15 +278,17 @@ Again, observe the response and expand the **Show Reasoning** link to trace thro
 ## Web Search Agent Creation and Configuration
 In this section, you will develop the **Web Search Agent**, another collaborator agents which is specifically skilled at searching the web and returning publicly available details about an entity as well as any recent news and analyst reports. 
 
-The architecture references multiple web search tools, namely, the **Brave Search Tool** and the **DuckDuckGo Search Tool**. Since these web search tools utilize different underlying technologies, leveraging both web search tools can return more relevant information and then the Web Search Agent would handle aggregating the final response. In this hands-on lab, you will add the **Brave Search Tool** and complete the hands-on lab using just that search tool. 
+The architecture references multiple web search tools, namely, the **Brave Search Tool** and/or the **DuckDuckGo Search Tool**. Since these web search tools utilize different underlying technologies, leveraging both web search tools can return more relevant information and then the Web Search Agent would handle aggregating the final response. 
 
-24- If you are not at the watsonx Orchestrate landing page (chat interface), repeat the earlier steps to make sure you are logged into IBM Cloud, find the watsonx Orchestrate service and launch it to access the landing page.
+In this hands-on lab, you will add the **Brave Search Tool** only and complete the hands-on lab using just that search tool. 
 
-25- On the watsonx Orchestrate landing page, which is the Chat UI, click **Create new agent** link (annotated with red arrow) to start creating the Web Search Agent.
+23- If you are not at the watsonx Orchestrate landing page (chat interface), repeat the earlier steps to make sure you are logged into IBM Cloud, find the watsonx Orchestrate service and launch it to access the landing page.
+
+24- On the watsonx Orchestrate landing page, which is the Chat UI, click **Create new agent** link (annotated with red arrow) to start creating the Web Search Agent.
 
 ![wxo landing page create agent](images/wxo-landing-page-create-agent.png) 
 
-26- Repeat the steps you did earlier to create an agent from scratch and provide the following name and description for the web search agent. Click **Create** (annotated with red arrow).
+25- Repeat the steps you did earlier to create an agent from scratch and provide the following name and description for the web search agent. Click **Create** (annotated with red arrow).
 
 Name: 
 ```
@@ -317,25 +302,25 @@ This agent can search the web to retrieve information related to user query.
 
 ![wxo create web search agent](images/wxo-create-web-search-agent.png) 
 
-27- On the agent configuration page, scroll down to the **Toolset** section or click the **Toolset** shortcut (annotated with red oval), then click **Add tool** (annotated with red arrow).
+26- On the agent configuration page, scroll down to the **Toolset** section or click the **Toolset** shortcut (annotated with red oval), then click **Add tool** (annotated with red arrow).
 
 ![wxo web search agent toolset](images/wxo-web-search-agent-toolset.png) 
 
-28- As explained earlier, watsonx Orchestrate supports multiple approaches for adding tools to agents. For the Web Search Agent, you will leverage the **Import** functionality like you did earlier. Click the **Import** tile (annotated with red rectangle).
+27- As explained earlier, watsonx Orchestrate supports multiple approaches for adding tools to agents. For the Web Search Agent, you will leverage the **Import** functionality like you did earlier. Click the **Import** tile (annotated with red rectangle).
 
 ![wxo web search tool import](images/wxo-web-search-tool-import.png) 
 
-29- On the Import tool page, drag and drop the **websearch_openapi.json** file provided by your instructor (annotated with red rectangle) and click **Next** (annotated with red arrow).
+28- On the Import tool page, drag and drop the **websearch_openapi.json** file provided by your instructor (annotated with red rectangle) and click **Next** (annotated with red arrow).
 
 ![wxo web search agent tool import openapi](images/wxo-web-search-agent-tool-import-openapi.png) 
 
-30- Next, select the checkboxes for the **Get Brave Search Results** operation (annotated with red arrow) and click **Done**.
+29- Next, select the checkboxes for the **Get Brave Search Results** operation (annotated with red arrow) and click **Done**.
 
 ![wxo web search agent tool import operations](images/brave-search.png) 
 
-31- At this point, you will see the tool imported under the Tools subsection which means it is available for the **Web Search Agent** to use this tools in executing tasks that require searching the web and retrieving data related to the user query. 
+30- At this point, you will see the tool imported under the Tools subsection which means it is available for the **Web Search Agent** to use this tools in executing tasks that require searching the web and retrieving data related to the user query. 
 
-32- Scroll down further to the **Behavior** section of the agent configuration page and add the following 
+31- Scroll down further to the **Behavior** section of the agent configuration page and add the following 
 **Instructions** to help guide the agent's behavior.
 
 Instructions: 
@@ -347,7 +332,7 @@ Next, test the functionality of the agent by asking a question such as ```Can yo
 
 ![wxo web search agent behavior](images/brave-search-agent.png) 
 
-33- Now that you have configured and tested the **Web Search Agent**, you can deploy it to make it accessible as a collaborator agent. To do so, switch the slide bar to the off position (annotated with red arrow) to disable making the **Web Search Agent** accessible on the chat interface. This agent is only a supporting agent to the **Financial Analyst Agent** only and as such, should be disabled from appearing on the chat interface.
+32- Now that you have configured and tested the **Web Search Agent**, you can deploy it to make it accessible as a collaborator agent. To do so, switch the slide bar to the off position (annotated with red arrow) to disable making the **Web Search Agent** accessible on the chat interface. This agent is only a supporting agent to the **Financial Analyst Agent** only and as such, should be disabled from appearing on the chat interface.
 
 Next, click the **Deploy** button to deploy the agent and makes it available to be used as a collaborator agent.
 
@@ -360,29 +345,29 @@ Next, click the **Deploy** button to deploy the agent and makes it available to 
 ## Pulling it together - Complete Agent Collaboration <a id="pulling-it-together"></a>
 Now that you have developed all agents and tools, in this section, you will work through the process of integrating the collaborator agents, testing and deploying the **Financial Analyst Agent**.
 
-34- If you are not at the watsonx Orchestrate landing page (chat interface), repeat the earlier steps to make sure you are logged into IBM Cloud, find the watsonx Orchestrate service and launch it to access the landing page.
+33- If you are not at the watsonx Orchestrate landing page (chat interface), repeat the earlier steps to make sure you are logged into IBM Cloud, find the watsonx Orchestrate service and launch it to access the landing page.
 
-35- On the watsonx Orchestrate landing page, which is the Chat UI, click **Manage agents** (annotated with red arrow).
+34- On the watsonx Orchestrate landing page, which is the Chat UI, click **Manage agents** (annotated with red arrow).
 
 ![wxo landing page manage agents](images/wxo-landing-page-manage-agents.png) 
 
-36- On the Manage agents page, select the **Financial Analyst Agent** (annotated with red rectangle).
+35- On the Manage agents page, select the **Financial Analyst Agent** (annotated with red rectangle).
 
 ![wxo manage agents](images/wxo-manage-agents.png) 
 
-37- On the **Financial Analyst Agent** configuration page, scroll down to the **Toolset** section or click the **Toolset** shortcut (annotated with red oval), and then click **Add agent** (annotated with red arrow) to add a collaborator agent.
+36- On the **Financial Analyst Agent** configuration page, scroll down to the **Toolset** section or click the **Toolset** shortcut (annotated with red oval), and then click **Add agent** (annotated with red arrow) to add a collaborator agent.
 
 ![wxo financial analyst collaborator agents](images/wxo-financial-analyst-agent-collaborator-agents.png) 
 
-38- On the pop-up, select **Add from local instance** tile. For reference, watsonx Orchestrate supports multiple approaches for adding collaborator agents. Please take a minute to consult the [Adding agents for orchestration](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/current?topic=agents-adding-orchestration) documentation for an overview of the different approaches including the option to add a collaborator agent from a rich catalog of pre-built agents or from other agents defined on the local instance or even importing an external agent.
+37- On the pop-up, select **Add from local instance** tile. For reference, watsonx Orchestrate supports multiple approaches for adding collaborator agents. Please take a minute to consult the [Adding agents for orchestration](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/current?topic=agents-adding-orchestration) documentation for an overview of the different approaches including the option to add a collaborator agent from a rich catalog of pre-built agents or from other agents defined on the local instance or even importing an external agent.
 
 ![wxo collaborator agent options](images/wxo-collaborator-agents-options.png) 
 
-39- Select the checkbox next to both, the **Web Search Agent** and the **Financial API Agent** (annotated with red arrows) and click **Add to agent** button (annotated with red oval).
+38- Select the checkbox next to both, the **Web Search Agent** and the **Financial API Agent** (annotated with red arrows) and click **Add to agent** button (annotated with red oval).
 
 ![wxo financial analyst add collaborators](images/wxo-financial-analyst-add-collaborators.png) 
 
-40- Scroll further down to the **Behavior** section or click the **Behavior** shortcut (annotated with red oval) and add the following **Instructions** to guide the agent in its reasoning and orchestration.
+39- Scroll further down to the **Behavior** section or click the **Behavior** shortcut (annotated with red oval) and add the following **Instructions** to guide the agent in its reasoning and orchestration.
 
 Instructions:
 ```
@@ -395,7 +380,7 @@ You are a Financial Analyst Agent that provides comprehensive financial research
 
 **Research & Information:**
 - Search the web for current financial news, analyst reports, and market insights using Brave Search
-- Find definitions of financial terms and company background information using Wikipedia search
+- Find definitions of financial terms and company background information using Brave Search 
 - Provide contextual analysis by combining multiple data sources
 
 **TOOL SELECTION GUIDE:**
@@ -421,16 +406,11 @@ You are a Financial Analyst Agent that provides comprehensive financial research
 - Debt analysis, revenue growth, profitability metrics
 - Multi-year financial performance
 
-**SEARCH WIKIPEDIA tool** - Use for:
-- Financial term definitions and explanations
-- Educational content about financial concepts
-- Company background and historical information
-
 **Response Guidelines:**
 - For current metrics and ratios, use GET STOCK INFORMATION tool
 - For historical performance analysis, use GET STOCK PRICE DATA tool
 - For quarterly/annual financials, use GET FINANCIAL STATEMENTS tool
-- For definitions and education, use SEARCH WIKIPEDIA tool
+- For definitions and education, use Brave Search tool
 - Always provide data-driven insights with specific metrics when available
 - Cite your sources and indicate when data is real-time vs historical
 
@@ -440,13 +420,13 @@ You are a Financial Analyst Agent that provides comprehensive financial research
 - "Show me Apple's Q1 2024 results" → Use GET FINANCIAL STATEMENTS tool (with year: 2024, quarter: "Q1")
 - "Compare Apple and Tesla market caps" → Use GET STOCK INFORMATION tool for both companies
 - "Apple's 3-year revenue growth trend" → Use GET FINANCIAL STATEMENTS tool (with years_back: 3)
-- "What is EBITDA margin?" → Use SEARCH WIKIPEDIA tool
+- "What is EBITDA margin?" → Use SEARCH Brave Search tool
 - "Tesla's debt-to-equity ratio over last 3 years" → Use GET FINANCIAL STATEMENTS tool (statement_type: "balance", years_back: 3)
 
 **Multi-Tool Examples:**
 - "Analyze Apple's performance and valuation" → GET STOCK INFORMATION + GET STOCK PRICE DATA
 - "Compare Q1 results of Apple and Google with P/E ratios" → GET FINANCIAL STATEMENTS + GET STOCK INFORMATION for both
-- "Explain EBITDA and show Microsoft's EBITDA trend" → SEARCH WIKIPEDIA + GET FINANCIAL STATEMENTS
+- "Explain EBITDA and show Microsoft's EBITDA trend" → Brave search + GET FINANCIAL STATEMENTS
 ```
 
 Test the agent behavior in the **Preview** section by asking the following sample question:
@@ -459,7 +439,7 @@ Expand the **Show Reasoning** and **Step 1** links to review the reasoning of th
 
 ![wxo knowledge base test](images/wxo-knowledge-base-test.png) 
 
-41- Continue testing your agent now by stressing the web search agent functionality. To do so, ask the following question.
+40- Continue testing your agent now by stressing the web search agent functionality. To do so, ask the following question.
 
 Question: 
 ```
@@ -469,20 +449,18 @@ Who are top executives for Amazon?
 Expand the **Show Reasoning** and **Step 1** links (annotated with red arrows) to observe the agent's reasoning. Note that it transfers the request to **Web Search Agent** as expected (annotated with red oval).
 ![wxo topexecs reasoning](images/wxo-topexecs-reasoning.png) 
 
-42- Do some further testing by asking the agent the following question and then expanding the **Show Reasoning** and **Step 1** (annotated with red arrows) to observe the agent reasoning.
+41- Do some further testing by asking the agent the following question and then expanding the **Show Reasoning** and **Step 1** (annotated with red arrows) to observe the agent reasoning.
 Question:
 ```
 what does EBITDA mean?
 ```
 
-Note that it transfers the request to **Financial API Agent** as annotated with red oval.
-![wxo reasoning ebitda step1](images/wxo-reasoning-ebitda-step1.png) 
-
-After that, expand **Step 2** (annotated with red arrow) to observe the second step taken by agent, which in this case, involves executing the actual tool, the **Search Wikipedia** tol (annotated with red oval).
+Note that in **Step 1**, it transfers the request to **Financial API Agent**.
+After that, expand **Step 2** (annotated with red arrow) to observe the second step taken by agent, which in this case, involves executing the actual tool, the **Brave Search** tol.
 
 ![wxo reasoning ebitda step2](images/wxo-reasoning-ebitda-step2.png) 
 
-43- At this point, you are ready to deploy your **Financial Analyst Agent**. To do so, scroll to the bottom of the configuration page and make sure the slide bar next to **Show agent** (annotated with red arrow) is enabled (green) to make the **Financial Analyst Agent** accessible on the chat interface. Click **Deploy** button (annotated with red arrow) to deploy your agent.
+42- At this point, you are ready to deploy your **Financial Analyst Agent**. To do so, scroll to the bottom of the configuration page and make sure the slide bar next to **Show agent** (annotated with red arrow) is enabled (green) to make the **Financial Analyst Agent** accessible on the chat interface. Click **Deploy** button (annotated with red arrow) to deploy your agent.
 
 ![wxo financial analyst agent deploy](images/wxo-financial-analyst-agent-deploy.png)
 
@@ -492,11 +470,11 @@ After that, expand **Step 2** (annotated with red arrow) to observe the second s
 
 Now that you have deployed your **Financial Analyst Agent**, you can interact with the agent using watsonx Orchestrate Conversational Interface.
 
-44- Click the top left navigation menu and select **Chat** (annotated with red rectangle) to access the conversational interface.
+43- Click the top left navigation menu and select **Chat** (annotated with red rectangle) to access the conversational interface.
 
 ![wxo chat ui](images/wxo-chat-ui.png)
 
-45- On the **Chat UI**, note that now you have the **Financial Analyst Agent** (annotated with red rectangle) as one of the available agents you can chat with. As you add more and more agents, you can select which agent you'd like to interact with by selecting the agent drop down list (annotated with red arrow).
+44- On the **Chat UI**, note that now you have the **Financial Analyst Agent** (annotated with red rectangle) as one of the available agents you can chat with. As you add more and more agents, you can select which agent you'd like to interact with by selecting the agent drop down list (annotated with red arrow).
 With the **Financial Analyst Agent** selected, try interacting by asking the following question and observe the response.
 
 Question: 
@@ -505,11 +483,11 @@ I'm interested in learning more about Meta and Amazon. Based on our internal kno
 ```
 ![wxo chat q1](images/wxo-chat-q1.png)
 
-46- Expand the **Show Reasoning** and **Step 1** sections (annotated with red arrows) to investigate the agent's reasoning in retrieving the response. In this case, the agent leverages its knowledge base to respond.
+45- Expand the **Show Reasoning** and **Step 1** sections (annotated with red arrows) to investigate the agent's reasoning in retrieving the response. In this case, the agent leverages its knowledge base to respond.
 
 ![wxo chat q1 reasoning](images/wxo-chat-q1-reasoning.png)
 
-47- Next, ask the following question to get a list of top executives at Amazon.
+46- Next, ask the following question to get a list of top executives at Amazon.
 Question:
 ```
 Who are the top executives at Amazon?
@@ -520,7 +498,7 @@ Again, expand the **Show Reasoning** and **Step 1** sections (annotated with red
 
 ![wxo chat q2 reasoning](images/wxo-chat-q2-reasoning.png)
 
-48- Next, try another question to retrieve a glossary definition for the diluted earnings per share that was returned in the first reply.
+47- Next, try another question to retrieve a glossary definition for the diluted earnings per share that was returned in the first reply.
 Question:
 ```
 can you define the glossary financial term of 'Diluted earnings per share'?
@@ -529,7 +507,7 @@ can you define the glossary financial term of 'Diluted earnings per share'?
 Expand the **Show Reasoning** section and observe that the agent took 3 steps (annotated with red rectangle) to retrieve the response for this question.
 ![wxo chat q3](images/wxo-chat-q3.png)
 
-49- Now, let's try to explore what are the steps taken.
+48- Now, let's try to explore what are the steps taken.
 Expand the **Step1**, **Step 2**, and **Step 3** sections and observe the agent transferring the request to the **Financial API Agent** to provide a definition to the financial term 'Diluted earnings per share'.
 
 ![wxo chat q3 reasoning 1](images/wxo-chat-q3-reasoning-1.png)
@@ -543,5 +521,5 @@ Feel free to explore and experience the power of Agents in action! 🚀
 
 To recap, you have used watsonx Orchestrate no-code functionality to develop a **Financial Analyst Agent** skilled at helping financial research analysts accelerate their research and due diligence in identifying new investment opportunities. You then added knowledge to the agent by uploading knowledge documents in the form of pdf files capturing earning reports.
 
-Next, you augrmented the **Financial Analyst Agent** capabilities by developing two other agents, the **Web Search Agent** and the **Financial API Agent** which are empowered with tools to execute web search queries and also retrieve information from internal APIs and glossary definition tools.
+Next, you augumented the **Financial Analyst Agent** capabilities by developing two other agents, the **Web Search Agent** and the **Financial API Agent** which are empowered with tools to execute web search queries and also retrieve information from internal APIs and glossary definition tools.
 These tools and agents help increase the power of the **Financial Analyst Agent** in providing timely research results to the analysts.
