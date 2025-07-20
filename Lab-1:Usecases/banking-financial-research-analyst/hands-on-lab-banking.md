@@ -3,7 +3,6 @@
 ## Table of Contents
 - [Use Case Description](#use-case-description)
 - [Architecture](#architecture)
-- [Pre-requisites](#pre-requisites)
 - [watsonx Orchestrate](#watsonx-orchestrate)
   - [Accessing watsonx Orchestrate](#accessing-watsonx-orchestrate)
 - [Financial Analyst Agent Creation](#financial-analyst-agent-creation)
@@ -30,13 +29,6 @@ By automating these tasks, the company aims to accelerate research process to id
 
 <img width="900" alt="image" src="images/banking-fra-architecture.png">
 
-## Pre-requisites
-To run the steps in this hands-on lab portion of the bootcamp, you need access to **watsonx Orchestrate** and **watsonx.ai** which are provided for you as part of the preparation for this bootcamp.
-
-- Please go the through the [environment-setup](https://github.ibm.com/skol/agentic-ai-client-bootcamp/tree/staging/environment-setup) guide for steps on API key creation, and project setup.
-
-- Check with your instructor to make sure **all systems** are up and running before you continue.
-
 
 ## watsonx Orchestrate
 As detailed in the [Solution Architecture](images/banking-fra-architecture.png), we will build and deploy the majority of the agents for the solution in watsonx Orchestrate. AI Agents are autonomous entities that can run tasks, decide and interact with their environment. In IBM watsonx Orchestrate, agents are a key component enabling the creation of complex, dynamic systems that can adapt and respond to changing conditions. 
@@ -47,7 +39,7 @@ To access watsonx Orchestrate, follow these steps:
 1- If not already logged into your IBM Cloud account, navigate your preferred browser to https://cloud.ibm.com and log in with your credentials (which you used for your TechZone reservation).
 
 2- On your IBM Cloud landing page, click the top left navigation menu (hamburger menu) and select **Resource list** (annotated with red rectangle).
-*Note: If you are a member of multiple IBM Cloud accounts, make sure you are working in the correct account (annotated with red oval) which has the required services available as explained in the [environment-setup](https://github.ibm.com/skol/agentic-ai-client-bootcamp/tree/staging/environment-setup) guide.*
+*Note: If you are a member of multiple IBM Cloud accounts, make sure you are working in the correct account (annotated with red oval) which has the required services available.*
 ![IBM Cloud Resource List](images/ibm_cloud_resources.png) 
 
 3- On the Resource List page, expand the **AI / Machine Learning** section (annotated with red arrow), and click the **Watsonx Orchestrate** service (annotated with red rectangle) service name.
@@ -73,7 +65,7 @@ In this section, you will go through the process of creating an AI agent in wats
 
 Name: 
 ```
-Financial Analyst Agent
+YOUR NAME - Financial Analyst Agent
 ```
 
 Description: 
@@ -163,7 +155,7 @@ In this section, you will develop the Financial API Agent, one of the collaborat
 
 14- On the Create an agent page, select **Create from scratch** tile , provide a **Name** and a **Description** for the agent and click **Create** (annotated with red arrow).
 
-Name: ```Financial API Agent```
+Name: ```YOUR NAME - Financial API Agent```
 
 Description: 
 ```
@@ -305,8 +297,6 @@ In this section, you will develop the **Web Search Agent**, another collaborator
 
 The architecture references multiple web search tools, namely, the **Brave Search Tool** and the **DuckDuckGo Search Tool**. Since these web search tools utilize different underlying technologies, leveraging both web search tools can return more relevant information and then the Web Search Agent would handle aggregating the final response. In this hands-on lab, you will add the **Brave Search Tool** and complete the hands-on lab using just that search tool. 
 
-*Optional* You can check with your instructor if they setup the **Brave Search Tool** as well and then you are welcome to try adding that tool as well. If you do add the **Brave Search Tool**, you need to update the instructions for the agent to retrieve search results from multiple tools and aggregate the results.
-
 24- If you are not at the watsonx Orchestrate landing page (chat interface), repeat the earlier steps to make sure you are logged into IBM Cloud, find the watsonx Orchestrate service and launch it to access the landing page.
 
 25- On the watsonx Orchestrate landing page, which is the Chat UI, click **Create new agent** link (annotated with red arrow) to start creating the Web Search Agent.
@@ -317,7 +307,7 @@ The architecture references multiple web search tools, namely, the **Brave Searc
 
 Name: 
 ```
-Web Search Agent
+YOUR NAME - Web Search Agent
 ```
 
 Description: 
