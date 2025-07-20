@@ -12,11 +12,11 @@ This pre-work lab is intended to set up the foundational IBM Cloud credentials r
 
 These values are essential for running various hands-on exercises and labs throughout the bootcamp. Follow the below steps to create the above. 
 
-## Step-1: Create IBM Cloud account (if not created) 
+## Step-1: Create IBMid account (if not created) 
 
-If you've not created your IBM cloud account, please refer the link and create your IBM account with your personal/business email id. 
+If you've not created your IBM cloud account, please refer the link and create your IBM account with your corporate email id that you have provided us in the registration
 
-[Create IBM Cloud account](https://www.ibm.com/account/reg/us-en/signup?formid=urx-19776)
+[Create IBMid account](https://www.ibm.com/docs/en/ibmid?topic=introduction)
 
 ## Step-2: Go to our email ID and join the IBM cloud account. 
 
