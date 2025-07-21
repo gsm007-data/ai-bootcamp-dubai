@@ -59,7 +59,7 @@ HR Agent retrieves relevant information from Company Benefits Knowledge document
 ## 🎥 Demo
 
 
-https://github.com/gsm007-data/ai-bootcamp-turkey/blob/tr_gsm/usecases/ask-hr/ashHR_demo_new_version.mp4
+[Demo](https://github.com/gsm007-data/ai-bootcamp-turkey/blob/tr_gsm/usecases/ask-hr/ashHR_demo_new_version.mp4)
 
 
 
