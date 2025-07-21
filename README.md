@@ -11,31 +11,26 @@ In this bootcamp, you will build and deploy an Agentic AI application prototype 
 🚀 You'll learn how to deploy an Agentic AI application and the trust considerations needed to go to production.
 
 ## Lab-0: IBM Cloud Setup - [Link](./Lab-0:IBM_Cloud_Setup)
-- Setup the necessary credentails to be used in the Lab such as 
-    - IBM Cloud API key
-    - Project ID 
-    - Deployment Space ID 
 
 ## Guided Lab & Demo
 - [Intelligent assistant for Warehouse management](./Lab-1:Usecases/intelligent-assistant)
     - watsonx Orchestrate + watsonx.ai
 
-## Lab-1: Business automation for Competitive Analysis -
-- [Business automation for Competitive Analysis](./Lab-1:Usecases/business-automation)
-    - watsonx Orchestrate + watsonx.ai
- 
-## Lab-2: Financial Research Analyst
+## Lab-1: Financial Research Analyst
 - [Financial Research Analyst](./Lab-1:Usecases/banking-financial-research-analyst)
     - watsonx Orchestrate + Knowledge Base
+
+## Lab-2: HR Automation
+- [HR automation](./Lab-1:Usecases/ask-hr) (Optional)
+    -  watsonx Orchestrate + Knowledge Base + Custom deployment
 
 ## Optional Hands-on Labs
 
 Note - You have access to the IBM watsonx environment until **28-July-2025**, you can feel free to perform this labs on your own.
 
-### HR Automation
-
-- [HR automation](./Lab-1:Usecases/ask-hr) (Optional)
-    -  watsonx Orchestrate + Knowledge Base + Custom deployment
+### Business automation for Competitive Analysis -
+- [Business automation for Competitive Analysis](./Lab-1:Usecases/business-automation)
+    - watsonx Orchestrate + watsonx.ai
 
 ### Lab-2: Custom Agent integration (CrewAI) - [Link](./Lab-2:Custom_Agent_Integration)
     - Integrate CrewAI agent in watsonx Orchestrate (Low code)
