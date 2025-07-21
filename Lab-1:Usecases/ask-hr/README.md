@@ -6,7 +6,6 @@ One of the main challenges faced by any big organization is their HR operations 
 
 
 
-
 ## 🤔 The Problem
 
 TechCorp Inc., a global IT leader with a workforce of 100,000 employees, faced a significant challenge in managing its growing HR operations. As the company expanded, it struggled with efficiently handling employee profile data, time-off requests, and workforce management. Traditional HR systems were no longer sufficient to keep up with the scale and complexity. With multiple vendor tools used for different HR operations, it is difficult to integrate all of them together and provide a seamless experience to the user.
@@ -59,11 +58,7 @@ HR Agent retrieves relevant information from Company Benefits Knowledge document
 ## 🎥 Demo
 
 
-[Demo](https://github.com/gsm007-data/ai-bootcamp-turkey/blob/tr_gsm/usecases/ask-hr/ashHR_demo_new_version.mp4)
-
-
-
-
+[Demo](ashHR_demo_new_version.mp4)
 
 
 > [!IMPORTANT]
