@@ -45,7 +45,7 @@ In this lab we will build an HR agent in watsonx Orchestrate, leveraging tools a
 
 <img width="1000" alt="image" src="assets/hands-on-lab-assets/step3.png">
 
-4. Select "Create from scratch", give your agent a name, e.g. "HR Agent", and fill in the description as shown below: 
+4. Select "Create from scratch", give your agent a name, e.g. "YOUR NAME - HR Agent", and fill in the description as shown below: 
 
 ```
 You are an agent who handles employee HR queries.  You provide short and crisp responses, keeping the output to 200 words or less.  You can help users check their profile data, retrieve latest time off balance, update title or address, and request time off. You can also answer general questions about company benefits.
@@ -102,7 +102,7 @@ When the user requests time off, convert the dates to YYYY-MM-DD format, e.g. 5/
 
  <img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step12.png">
 
-13. Test your agent in the preview chat on the right side by asking the following questions and validating the responses.  They should look similar to what is shown in the screenshots below:
+13. Test your agent in the preview chat on the right side by asking the following questions and validating the responses. For the names, use the data in [this excel sheet](./users_data.xlsx), and validate the agent outcome based on the data. They should look similar to what is shown in the screenshots below:
 
 ```
 1. What is the pet policy? 
