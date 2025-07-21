@@ -72,4 +72,4 @@ https://github.com/gsm007-data/ai-bootcamp-turkey/blob/tr_gsm/usecases/ask-hr/as
 
 ## 📄 Hands-on step-by-step lab
 
-Please find the step-by-step instructions [here](/ask-hr/assets/hands-on-lab-askHR.md) on how you can implement this use case.
+Please find the step-by-step instructions [here](/ask-hr/assets/hands-on-lab-assets/hands-on-lab-askHR.md) on how you can implement this use case.
