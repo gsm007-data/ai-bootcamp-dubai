@@ -401,7 +401,7 @@ On the following screen, enter details about the imported agent:
   - API key: enter the key provided to you by your instructor
   - Service instance URL: enter the value provided to you by your instructor
 - Define new agent
-  - Display name: `TrafficAgent` (the name cannot contain a space)
+  - Display name: `NAME-TrafficAgent` (the name cannot contain a space)
   - Description of agent capabilities: `The TrafficAgent agent provides information about traffic in any given location.`
 
 ![alt text](images/image23.png)
