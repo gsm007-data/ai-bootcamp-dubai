@@ -37,15 +37,15 @@ In this lab we will build an HR agent in watsonx Orchestrate, leveraging tools a
 
 1. When you launch watsonx Orchestrate, you'll be directed to this page. Click on the hamburger menu in the top left corner:
 
-<img width="1000" alt="image" src="hands-on-lab-assets/step1.png">
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/step1.png">
 
 2. Click on the down arrow next to **Build**.  Then click on **Agent Builder**:
 
-<img width="1000" alt="image" src="hands-on-lab-assets/step2.png">
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/step2.png">
 
 3. Click on **Create agent +**:
 
-<img width="1000" alt="image" src="hands-on-lab-assets/step3.png">
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/step3.png">
 
 4. Select "Create from scratch", give your agent a name, e.g. "HR Agent", and fill in the description as shown below: 
 
@@ -54,7 +54,7 @@ You are an agent who handles employee HR queries.  You provide short and crisp r
 ```  
 Click on **Create**:
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step4.png">
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step4.png">
 
 5. Scroll down the screen to the **Knowledge** section. Copy the following description into the **Knowledge Description** section:
 
@@ -64,31 +64,31 @@ This knowledge base addresses the company's employee benefits, including parenta
 
 Click on **Upload files**:
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step5.png">
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step5.png">
 
 6. Drag and drop the [Employee Benefits.pdf](/usecases/ask-hr/assets/Employee-Benefits.pdf) and click on **Upload**:
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step6.png">  
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step6.png">  
 
 7. Wait until the file has been uploaded successfully and double check that it is now shown in the Knowledge section: 
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step7.png">  
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step7.png">  
 
 8. Scroll down to the **Toolset** section. Click on **Add tool +**:
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step8.png">
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step8.png">
 
 9. Select **Import**:
 
-<img width="1000" alt="image" src="hands-on-lab-assets/step13.png">
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/step13.png">
 
 10. Drag and drop or click to upload the **hr.yaml** file (provided to you by the instructor), then click on **Next**:
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step10.png">    
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step10.png">    
 
 11. Select all the operations and click on **Done**:
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step11.png">
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step11.png">
 
 12. Scroll down to the **Behavior** section. Insert the instructions below into the **Instructions** field:
 
@@ -102,7 +102,7 @@ When user asks to show profile data or check time off balance or update title/ad
 When the user requests time off, convert the dates to YYYY-MM-DD format, e.g. 5/22/2025 should be converted to 2025-05-22 before passing the date to the post_request_time_off tool.
  ```
 
- <img width="1000" alt="image" src="hands-on-lab-assets/hr_step12.png">
+ <img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step12.png">
 
 13. Test your agent in the preview chat on the right side by asking the following questions and validating the responses.  They should look similar to what is shown in the screenshots below:
 
@@ -123,22 +123,22 @@ When the user requests time off, convert the dates to YYYY-MM-DD format, e.g. 5/
 
 ```
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step13.png">
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step13.png">
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step13_2.png">
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step13_2.png">
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step13_3.png">
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step13_3.png">
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step13_4.png">
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step13_4.png">
 
 14. Once you have validated the answers, click on **Deploy** in the top right corner to deploy your agent:
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step14.png">
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step14.png">
 
 15. Click on the hamburger menu in the top left corner and then click on **Chat**:
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step15.png">
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step15.png">
 
 16. Make sure **HR Agent** is selected. You can now test your agent:
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step16.png">
+<img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step16.png">
