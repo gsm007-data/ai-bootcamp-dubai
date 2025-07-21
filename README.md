@@ -21,16 +21,16 @@ In this bootcamp, you will build and deploy an Agentic AI application prototype 
     - watsonx Orchestrate + Knowledge Base
 
 ## Lab-2: HR Automation
-- [HR automation](./Lab-1:Usecases/ask-hr) (Optional)
+- [HR automation](./Lab-1:Usecases/ask-hr) 
     -  watsonx Orchestrate + Knowledge Base + Custom deployment
 
 ## Optional Hands-on Labs
 
-Note - You have access to the IBM watsonx environment until **28-July-2025**, you can feel free to perform this labs on your own.
-
-### Business automation for Competitive Analysis -
+### Business automation for Competitive Analysis (Optional)
 - [Business automation for Competitive Analysis](./Lab-1:Usecases/business-automation)
     - watsonx Orchestrate + watsonx.ai
+
+Note - You have access to the IBM watsonx environment until **28-July-2025**, you can feel free to perform this labs on your own.
 
 ### Lab-2: Custom Agent integration (CrewAI) - [Link](./Lab-2:Custom_Agent_Integration)
     - Integrate CrewAI agent in watsonx Orchestrate (Low code)
