@@ -6,9 +6,7 @@
 - [Use case description](#use-case-description)
 - [Architecture](#architecture)
 - [Pre-requisites](#pre-requisites)
-- [Step by step instructions to build agents](#step-by-step-instructions-to-build-agents)
-  - [Deploying HR agent](#deploying-hr-agent)
-
+- [Step by step instructions to build the HR Agent](#step-by-step-instructions-to-build-agents)
     
 ## Use Case Description
 
@@ -18,7 +16,7 @@ In this lab we will build an HR agent in watsonx Orchestrate, leveraging tools a
 
 ## Architecture
 
-<img width="1000" alt="image" src="arch_diagm.png">
+<img width="1000" alt="image" src="assets/arch_diagm.png">
 
 
 
@@ -33,7 +31,7 @@ In this lab we will build an HR agent in watsonx Orchestrate, leveraging tools a
 
 
 
-## Step by step instructions to build the HR Agent:
+## Step by step instructions to build the HR Agent
 
 1. When you launch watsonx Orchestrate, you'll be directed to this page. Click on the hamburger menu in the top left corner:
 
@@ -66,7 +64,7 @@ Click on **Upload files**:
 
 <img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step5.png">
 
-6. Drag and drop the [Employee Benefits.pdf](/usecases/ask-hr/assets/Employee-Benefits.pdf) and click on **Upload**:
+6. Drag and drop the [Employee Benefits.pdf](./assets/Employee-Benefits.pdf) and click on **Upload**:
 
 <img width="1000" alt="image" src="assets/hands-on-lab-assets/hr_step6.png">  
 
