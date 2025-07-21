@@ -2,7 +2,7 @@
 # Lab:0 - IBM Cloud Setup
 
 🎯 Objective
-This pre-work lab is intended to check whether you've create the IBM cloud environment properly or not. 
+This pre-work lab is intended to check whether you've created the IBM cloud environment properly or not. 
 
 These values are essential for running various hands-on exercises and labs throughout the bootcamp. Follow the below steps to create the above. 
 
@@ -20,6 +20,7 @@ If you've not created your IBM cloud account, please refer the link and create y
 
 ![Banner](images/img002.png)
 
+**Important:**: You can continue the remaining steps later after the bootcamp if you attend to run the Business Automation lab. For the workshop, you only need to complete Step 1, 2 and 3 listed above.
 
 ## Optional - Will be only useful for - [Business automation for Competitive Analysis](Lab-1:Usecases/business-automation)
 
