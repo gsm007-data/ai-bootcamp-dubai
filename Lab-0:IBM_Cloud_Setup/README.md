@@ -2,13 +2,7 @@
 # Lab:0 - IBM Cloud Setup
 
 🎯 Objective
-This pre-work lab is intended to set up the foundational IBM Cloud credentials required for the bootcamp. You’ll generate and securely store the following mandatory credentials:
-
-- API Key
-
-- Project ID
-
-- Space ID
+This pre-work lab is intended to check whether you've create the IBM cloud environment properly or not. 
 
 These values are essential for running various hands-on exercises and labs throughout the bootcamp. Follow the below steps to create the above. 
 
@@ -25,6 +19,9 @@ If you've not created your IBM cloud account, please refer the link and create y
 ## Step-3: After login, this is how your IBM cloud account looks like. 
 
 ![Banner](images/img002.png)
+
+
+## Optional - Will be only useful for - [Business automation for Competitive Analysis](Lab-1:Usecases/business-automation)
 
 ## Step-4: Create API Key 
 
